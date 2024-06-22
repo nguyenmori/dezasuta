@@ -2,7 +2,7 @@
 
 /* work1-1 */
 .container1 {
-  width: 960px;
+  max-width: 960px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -10,13 +10,14 @@
 
 .box1 {
   background: blue;
-  width: 300px;
+  /* width: 300px; */
+  width: 31%;
   height: 300px;
 }
 
 /* work1-2 */
 .container2 {
-  width: 960px;
+  max-width: 960px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -25,13 +26,14 @@
 
 .box2 {
   background: red;
-  width: 300px;
+  /* width: 300px; */
+  width: 31%;
   height: 300px;
 }
 
 /* work1-3 */
 .container3 {
-  width: 960px;
+  max-width: 960px;
   margin: 30px auto;
   display: flex;
   flex-direction: row;
@@ -46,11 +48,16 @@
 }
 
 .menu li {
-  padding-right: 20px;
+  /* padding-right: 20px; */
+  box-sizing: border-box;
+  padding: 8px 29px 8px 10px;
   border-right: 1px solid gray;
 }
-
+/* 
 .menu li:nth-child(5) {
+  border-style: none;
+} */
+.menu li:last-child {
   border-style: none;
 }
 
@@ -58,7 +65,6 @@
 @media screen and (max-width: 767px) {
   .container3 {
     padding: 30px 16px;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -66,7 +72,6 @@
   .menu {
     width: 100%;
     margin-top: 16px;
-    display: flex;
     flex-direction: column;
   }
 
